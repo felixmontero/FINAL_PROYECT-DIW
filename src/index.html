@@ -5,15 +5,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="../style.css">
     <title>Carpinteria Montero</title>
 </head>
 
 <body>
     <header>
         <ul class="navbar">
-            <li><a class="link" href="index.html">Inicio</a></li>
-            <li><a class="link" href="precios.html">Precios</a></li>
+            <li><a class="link" href="#indice">Inicio</a></li>
+            <li><a class="link" href="precios">Precios</a></li>
             <li><a class="link" href="#">Contactanos</a></li>
             <li><a class="link" href="#">Sobre nosotros</a></li>
         </ul>
@@ -21,18 +21,18 @@
 
     <main>
         <!-- Slideshow -->
-        <section class="slideshow-container-container">
+        <section id="inicio" class="slideshow-container-container">
             
             <article class="mySlides fade">
-                <img src="/img/carpinteriaLong.jpg" style="width:100%">
+                <img src="../img/carpinteriaLong.jpg" style="width:100%">
                 <div class="text">Carpinteria1</div>
             </article>
             <article class="slide fade">
-                <img src="/img/carpinteriaSquare.png" style="width:100%">
+                <img src="../img/carpinteriaSquare.png" style="width:100%">
                 <div class="text">Carpinteria2</div>
             </article>
             <article class="slide fade">
-                <img src="/img/carpinteriaWhide.avif" style="width:100%">
+                <img src="../img/carpinteriaWhide.avif" style="width:100%">
                 <div class="text">Carpinteria3</div>
             </article>
 
@@ -76,18 +76,28 @@
             }
         </script>
         <section>
-            <article>
+            <article id="precios">
                 <h1>Precios</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Impedit magni, recusandae tempora quia, accusantium libero consequatur
                     numquam ea voluptates sint officiis eius quo dolores tempore.
                 </p>
             </article>
-            <article>
+            <article id="contacto">
                 <h1>Contactanos</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    numquam ea voluptates sint officiis eius quo dolores tempore.
-                    Odio corrupti distinctio explicabo facere?</p>
+                <form action="">
+                    <div class="fila mitad">
+                        <input type="text" placeholder="Nombre Completo *" class="input-mitad" required>
+                        <input type="email" placeholder="Dirección de Email *" class="input-mitad" required>
+                    </div>
+                    <div class="fila">
+                        <input type="text" placeholder="Tema..." class="input-full">
+                    </div>
+                    <div class="fila">
+                        <textarea name="" id="" cols="30" rows="10" placeholder="Tu Mensaje..." class="input-full"></textarea>
+                    </div>
+                    <input type="submit" value="Enviar Mensaje" class="btn-enviar">
+                </form>
             </article>
             <article>
                 <h1>Sobre nosotros</h1>
@@ -102,7 +112,7 @@
     <footer>
         <p>Web dseñada por:
             <a href="https://pauramisweb.netlify.app/">Pau Ramis</a>
-            <a href="https://stately-genie-d6759a.netlify.app/">Felix Montero</a>
+            <a href="https://stately-genie-d6759a.netlify.app/">Félix Montero</a>
         </p>
     </footer>
 </body>
