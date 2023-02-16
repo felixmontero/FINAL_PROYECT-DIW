@@ -122,3 +122,9 @@
      opacity: 1
    }
  }
+
+ /*----- main sections ------*/
+
+ h1 {
+  font-size: 35px;
+ }
