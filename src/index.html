@@ -5,22 +5,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="/style.css">
     <title>Carpinteria Montero</title>
 </head>
 
 <body>
     <header>
         <ul class="navbar">
-            <li><a class="link" href="#indice">Inicio</a></li>
-            <li><a class="link" href="precios">Precios</a></li>
+            <li><a class="link" href="index.html">Inicio</a></li>
+            <li><a class="link" href="precios.html">Precios</a></li>
             <li><a class="link" href="#">Contactanos</a></li>
             <li><a class="link" href="#">Sobre nosotros</a></li>
         </ul>
     </header>
 
     <main>
-        <!-- Slideshow -->
+        <section class="">
+            
+            <!-- Slideshow -->
         <section id="inicio" class="slideshow-container-container">
             
             <article class="mySlides fade">
@@ -40,55 +42,59 @@
             <a class="next" onclick="plusSlides(1)">&#10095;</a>
 
         </section>
-        <br>
+            <br>
 
-        <div style="text-align:center">
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
-        </div>
-        <script>
-            let slideIndex = 1;
-            showSlides(slideIndex);
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+            <script>
+                let slideIndex = 1;
+                showSlides(slideIndex);
 
-            function plusSlides(n) {
-                showSlides(slideIndex += n);
-            }
-
-            function currentSlide(n) {
-                showSlides(slideIndex = n);
-            }
-
-            function showSlides(n) {
-                let i;
-                let slides = document.getElementsByClassName("mySlides");
-                let dots = document.getElementsByClassName("dot");
-                if (n > slides.length) { slideIndex = 1 }
-                if (n < 1) { slideIndex = slides.length }
-                for (i = 0; i < slides.length; i++) {
-                    slides[i].style.display = "none";
+                function plusSlides(n) {
+                    showSlides(slideIndex += n);
                 }
-                for (i = 0; i < dots.length; i++) {
-                    dots[i].className = dots[i].className.replace(" active", "");
+
+                function currentSlide(n) {
+                    showSlides(slideIndex = n);
                 }
-                slides[slideIndex - 1].style.display = "block";
-                dots[slideIndex - 1].className += " active";
-            }
-        </script>
+
+                function showSlides(n) {
+                    let i;
+                    let slides = document.getElementsByClassName("mySlides");
+                    let dots = document.getElementsByClassName("dot");
+                    if (n > slides.length) { slideIndex = 1 }
+                    if (n < 1) { slideIndex = slides.length }
+                    for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";
+                    }
+                    for (i = 0; i < dots.length; i++) {
+                        dots[i].className = dots[i].className.replace(" active", "");
+                    }
+                    slides[slideIndex - 1].style.display = "block";
+                    dots[slideIndex - 1].className += " active";
+                }
+            </script>
+        </section>
         <section>
             <article>
                 <h1>Sobre nosotros</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Impedit magni, recusandae tempora quia, accusantium libero consequatur
-                    Odio corrupti distinctio explicabo facere?
+                <p>Somos una empresa de carpinteria de mallorca, trabajamos con madera y aluminio a petición.
+                    Diseñamos, construimos y reparamos todo tipo de muebles.
+                </p>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Cumque deleniti, iste omnis praesentium quia cupiditate. Ad non quas unde dolore porro recusandae!
+                    Perferendis, commodi iure? Quisquam omnis accusamus reprehenderit est.
                 </p>
             </article>
-            
-            <article id="precios">
+            <article>
                 <h1>Precios</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Impedit magni, recusandae tempora quia, accusantium libero consequatur
-                    numquam ea voluptates sint officiis eius quo dolores tempore.
+                <p>Los precios podrán variar dependiendo del tipo de mueble que se solicite y su material.
+                    A continuación se listan los precios de los principales factores que se tienen en cuenta.
+
                 </p>
             </article>
             <article id="contacto">
@@ -107,7 +113,6 @@
                     <input type="submit" value="Enviar Mensaje" class="btn-enviar">
                 </form>
             </article>
-        
         </section>
     </main>
 
