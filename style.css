@@ -1,130 +1,193 @@
- /* navbar */ 
+/*---- navbar -----*/
 ul.navbar {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #272525;
-  }
-  
-  ul {
-    color: rgb(255, 255, 255);
-    padding-left: 6%;
-  }
-  
-  li{
-    text-decoration: none;
-    display: block;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #272525;
+}
+
+li {
+  text-decoration: none;
+  display: block;
+}
+
+ul.navbar li {
+  float: left;
+}
+
+ul.navbar li a {
+  font-family: 'Alatsi';
+  font-size: 22px;
+  display: block;
+  color: #ffffff;
+  font-size: 140%;
+  padding: 20px 19px;
+  text-decoration: none;
+}
+
+ul.navbar li a:hover {
+  background-color: #000000;
+}
+
+ul.navbar li.right {
+  float: right;
+}
+
+/*---- SlideShow ----*/
+* {
+  box-sizing: border-box
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+.mySlides img {
+  height: 400px;
+  object-fit: cover;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: .4
   }
 
-  ul.navbar li {
-    float: left;
+  to {
+    opacity: 1
   }
-  
-  ul.navbar li a {
-    font-family: 'Alatsi';font-size: 22px;
-    display: block;
-    color:  	#ffffff;
-    font-size: 140%;
-    padding: 20px 19px;
-    text-decoration: none;
-  }
-  
-  ul.navbar li a:hover {
-    background-color: #000000;
-  }
-  
-  ul.navbar li.right {
-    float: right;
-  }
+}
 
-   /* SlideShow */ 
-   * {box-sizing:border-box}
+/*----- main sections ------*/
 
-   /* Slideshow container */
-   .slideshow-container {
-     max-width: 1000px;
-     position: relative;
-     margin: auto;
-   }
-   
-   /* Hide the images by default */
-   .mySlides {
-     display: none;
-   }
-   
-   /* Next & previous buttons */
-   .prev, .next {
-     cursor: pointer;
-     position: absolute;
-     top: 50%;
-     width: auto;
-     margin-top: -22px;
-     padding: 16px;
-     color: white;
-     font-weight: bold;
-     font-size: 18px;
-     transition: 0.6s ease;
-     border-radius: 0 3px 3px 0;
-     user-select: none;
-   }
-   
-   /* Position the "next button" to the right */
-   .next {
-     right: 0;
-     border-radius: 3px 0 0 3px;
-   }
-   
-   /* On hover, add a black background color with a little bit see-through */
-   .prev:hover, .next:hover {
-     background-color: rgba(0,0,0,0.8);
-   }
-   
-   /* Caption text */
-   .text {
-     color: #f2f2f2;
-     font-size: 15px;
-     padding: 8px 12px;
-     position: absolute;
-     bottom: 8px;
-     width: 100%;
-     text-align: center;
-   }
-   
-   /* Number text (1/3 etc) */
-   .numbertext {
-     color: #f2f2f2;
-     font-size: 12px;
-     padding: 8px 12px;
-     position: absolute;
-     top: 0;
-   }
-   
-   /* The dots/bullets/indicators */
-   .dot {
-     cursor: pointer;
-     height: 15px;
-     width: 15px;
-     margin: 0 2px;
-     background-color: #bbb;
-     border-radius: 50%;
-     display: inline-block;
-     transition: background-color 0.6s ease;
-   }
-   
-   .active, .dot:hover {
-     background-color: #717171;
-   }
-   
-   /* Fading animation */
-   .fade {
-     animation-name: fade;
-     animation-duration: 1.5s;
-   }
-   
-   @keyframes fade {
-     from {opacity: .4}
-     to {opacity: 1}
-   }
+h1 {
+ font-size: 35px;
+}
 
-   
+
+
+/* *********************/
+/* seccion C O N T A C T O */
+/* *********************/
+
+#contacto {
+  padding: 100px 15px;
+  background-color: #f3f3f3;
+}
+
+#contacto .titulo-seccion {
+  margin-bottom: 20px;
+}
+
+#contacto .contenedor-form {
+  max-width: 1100px;
+  margin: auto;
+}
+
+#contacto .contenedor-form .fila {
+  margin-bottom: 15px;
+}
+
+#contacto .contenedor-form .mitad {
+  display: flex;
+  justify-content: space-between;
+}
+
+#contacto .contenedor-form input,
+#contacto .contenedor-form textarea {
+  padding: 20px;
+  border-radius: 20px;
+  border: none;
+  border: 1px solid #919191;
+}
+
+#contacto .contenedor-form .mitad input {
+  width: 48%;
+}
+
+#contacto .contenedor-form .input-full {
+  width: 100%;
+}
+
+#contacto .titulo-seccion {
+  text-align: center;
+  font-size: 22px;
+  text-transform: uppercase;
+  color: #111135;
+  text-decoration: underline;
+  text-decoration-color: #d3d3d3;
+  text-decoration-thickness: 5px;
+}
+
+#contacto .btn-enviar {
+  display: block;
+  margin: auto;
+  cursor: pointer;
+  transition: .5s;
+  padding: 10px 15px !important;
+}
+
+#contacto .btn-enviar:hover {
+  background-color: green;
+  color: #fff;
+}
