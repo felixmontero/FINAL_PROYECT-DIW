@@ -20,67 +20,76 @@
     </header>
 
     <main>
-        <!-- Slideshow -->
-        <section id="inicio" class="slideshow-container-container">
-            
-            <article class="mySlides fade">
-                <img src="../img/carpinteriaLong.jpg" style="width:100%">
-                <div class="text">Carpinteria1</div>
-            </article>
-            <article class="slide fade">
-                <img src="../img/carpinteriaSquare.png" style="width:100%">
-                <div class="text">Carpinteria2</div>
-            </article>
-            <article class="slide fade">
-                <img src="../img/carpinteriaWhide.avif" style="width:100%">
-                <div class="text">Carpinteria3</div>
-            </article>
+        <section class="">
+            <section class="slideshow-container">
 
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                <article class="mySlides fade">
+                    <img src="/img/carpinteriaLong.jpg" style="width:100%" alt="Carpinteria1">
+                </article>
+                <article class="mySlides fade">
+                    <img src="/img/carpinteriaSquare.png" style="width:100%" alt="Carpinteria2">
+                </article>
+                <article class="mySlides fade">
+                    <img src="/img/carpinteriaWhide.avif" style="width:100%" alt="Carpinteria3">
+                </article>
 
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            </section>
+            <br>
+
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+            <script>
+                let slideIndex = 1;
+                showSlides(slideIndex);
+
+                function plusSlides(n) {
+                    showSlides(slideIndex += n);
+                }
+
+                function currentSlide(n) {
+                    showSlides(slideIndex = n);
+                }
+
+                function showSlides(n) {
+                    let i;
+                    let slides = document.getElementsByClassName("mySlides");
+                    let dots = document.getElementsByClassName("dot");
+                    if (n > slides.length) { slideIndex = 1 }
+                    if (n < 1) { slideIndex = slides.length }
+                    for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";
+                    }
+                    for (i = 0; i < dots.length; i++) {
+                        dots[i].className = dots[i].className.replace(" active", "");
+                    }
+                    slides[slideIndex - 1].style.display = "block";
+                    dots[slideIndex - 1].className += " active";
+                }
+            </script>
         </section>
-        <br>
-
-        <div style="text-align:center">
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
-        </div>
-        <script>
-            let slideIndex = 1;
-            showSlides(slideIndex);
-
-            function plusSlides(n) {
-                showSlides(slideIndex += n);
-            }
-
-            function currentSlide(n) {
-                showSlides(slideIndex = n);
-            }
-
-            function showSlides(n) {
-                let i;
-                let slides = document.getElementsByClassName("mySlides");
-                let dots = document.getElementsByClassName("dot");
-                if (n > slides.length) { slideIndex = 1 }
-                if (n < 1) { slideIndex = slides.length }
-                for (i = 0; i < slides.length; i++) {
-                    slides[i].style.display = "none";
-                }
-                for (i = 0; i < dots.length; i++) {
-                    dots[i].className = dots[i].className.replace(" active", "");
-                }
-                slides[slideIndex - 1].style.display = "block";
-                dots[slideIndex - 1].className += " active";
-            }
-        </script>
         <section>
-            <article id="precios">
+            <article>
+                <h1>Sobre nosotros</h1>
+                <p>Somos una empresa de carpinteria de mallorca, trabajamos con madera y aluminio a petición.
+                    Diseñamos, construimos y reparamos todo tipo de muebles.
+                </p>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Cumque deleniti, iste omnis praesentium quia cupiditate. Ad non quas unde dolore porro recusandae!
+                    Perferendis, commodi iure? Quisquam omnis accusamus reprehenderit est.
+                </p>
+            </article>
+            <article>
                 <h1>Precios</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Impedit magni, recusandae tempora quia, accusantium libero consequatur
-                    numquam ea voluptates sint officiis eius quo dolores tempore.
+                <p>Los precios podrán variar dependiendo del tipo de mueble que se solicite y su material.
+                    A continuación se listan los precios de los principales factores que se tienen en cuenta.
+
                 </p>
             </article>
             <article id="contacto">
@@ -98,12 +107,6 @@
                     </div>
                     <input type="submit" value="Enviar Mensaje" class="btn-enviar">
                 </form>
-            </article>
-            <article>
-                <h1>Sobre nosotros</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Impedit magni, recusandae tempora quia, accusantium libero consequatur
-                    Odio corrupti distinctio explicabo facere?</p>
             </article>
         </section>
     </main>
