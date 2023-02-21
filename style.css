@@ -127,14 +127,39 @@
 
  h1 {
    font-size: 35px;
- }
-
- article {
-   margin-left: 10px;
-   margin-bottom: 15px;
- }
-
- p {
+   text-align: center;
    margin-bottom: 10px;
 
  }
+
+ .textBox {
+   margin-left: 10%;
+   margin-right: 10%;
+   margin-bottom: 2%;
+   padding-top: 1%;
+   align-items: center;
+   background-color: beige;
+
+ }
+
+ .textBox p {
+   margin-left: 10%;
+   margin-right: 10%;
+   text-align: center;
+
+ }
+
+ p {
+   padding-bottom: 15px;
+
+ }
+ 
+ .prices {
+  text-align: center;
+  display: grid;
+  grid-template-columns: auto auto auto;
+ }
+
+ .pricesDiv {
+  display: flex;
+  flex-direction: column; }
