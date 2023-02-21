@@ -12,10 +12,10 @@
 <body>
     <header>
         <ul class="navbar">
-            <li><a class="link" href="#indice">Inicio</a></li>
-            <li><a class="link" href="#">Precios</a></li>
-            <li><a class="link" href="#">Contactanos</a></li>
-            <li><a class="link" href="#">Sobre nosotros</a></li>
+            <li><a class="link" href="#">Inicio</a></li>
+            <li><a class="link" href="#Nosotros">Sobre nosotros</a></li>
+            <li><a class="link" href="#Precios">Precios</a></li>
+            <li><a class="link" href="#Contactanos">Contactanos</a></li>
         </ul>
     </header>
 
@@ -38,11 +38,12 @@
             </section>
             <br>
 
-            <div style="text-align:center">
+            <!--    <div style="text-align:center">
                 <span class="dot" onclick="currentSlide(1)"></span>
                 <span class="dot" onclick="currentSlide(2)"></span>
                 <span class="dot" onclick="currentSlide(3)"></span>
             </div>
+        -->
             <script>
                 let slideIndex = 1;
                 showSlides(slideIndex);
@@ -73,24 +74,50 @@
             </script>
         </section>
         <section>
-            <article>
+            <article class="textBox" id="Nosotros">
                 <h1>Sobre nosotros</h1>
                 <p>Somos una empresa de carpinteria de mallorca, trabajamos con madera y aluminio a petición.
                     Diseñamos, construimos y reparamos todo tipo de muebles.
                 </p>
                 <p>
-                    Al ser una empresa pequeña y local, de solo dos trabajadores, tenemos un contacto directo con el cliente,
-                    lo cual nos proporciona más presicion a la hora de calcar exactamente los pedidos como los quiere el cliente.
+                    Al ser una empresa pequeña de solo dos trabajadores, tenemos un contacto directo con el
+                    cliente,
+                    lo cual nos proporciona más precision a la hora de realizar los pedidos exactamente como los quiere
+                    el cliente.
+                    También podemos aconsejar sobre los materiales a usar, su resistencia, flexibilidad, duración i el
+                    costo de estos,
+                    para asegurar que cada cliente tenga su producto perfecto.
                 </p>
             </article>
-            <article>
+            <article class="textBox" id="Precios">
                 <h1>Precios</h1>
                 <p>Los precios podrán variar dependiendo del tipo de mueble que se solicite y su material.
-                    A continuación se listan los precios de los principales factores que se tienen en cuenta.
-
+                    A continuación se listan los precios de los principales contratos con precios aproximados según el
+                    tipo de proyecto a contratar. Por favor contacte con nosotos para obtener un precio más proximo a su producto.
                 </p>
+
+                <div class="prices">
+                    <div class="pricesDiv">
+                        <h2>Pequeños proyectos</h2>
+                        <p>Elaboracion de pequeños objetos, reparaciones, o tratamiento de la madera.</p>
+                        <p>20€ - 750€</p>
+                    </div>
+
+                    <div class="pricesDiv">
+                        <h2>Muebles medianos</h2>
+                        <p>Elaboracion de muebles complejos como mesas o puertas, o reparaaciones de muebles muy dañados
+                            o antiguos</p>
+                        <p>750€ - 2500€</p>
+                    </div>
+
+                    <div class="pricesDiv">
+                        <h2>Grandes obras</h2>
+                        <p>Proyectos de grandes estructuras o conjuntos de proyectos medianos. </p>
+                        <p>2500€+</p>
+                    </div>
+                </div>
             </article>
-            <article id="contacto">
+            <article class="textBox" id="Contactanos">
                 <h3 class="titulo-seccion">Contacta ahora</h3>
                 <div class="contenedor-form">
                     <form action="">
@@ -102,7 +129,8 @@
                             <input type="text" placeholder="Tema..." class="input-full">
                         </div>
                         <div class="fila">
-                            <textarea name="" id="" cols="30" rows="10" placeholder="Tu Mensaje..." class="input-full"></textarea>
+                            <textarea name="" id="" cols="30" rows="10" placeholder="Tu Mensaje..."
+                            class="input-full"></textarea>
                         </div>
                         <input type="submit" value="Enviar Mensaje" class="btn-enviar">
                     </form>
