@@ -1,7 +1,7 @@
  /*---- navbar -----*/
  * {
    margin: 0;
-   
+
  }
 
  ul.navbar {
@@ -125,10 +125,11 @@
  }
 
  /*----- main sections ------*/
-main{
-  background-color: beige;
+ main {
+   background-color: beige;
 
-}
+ }
+
  h1 {
    font-size: 35px;
    text-align: center;
@@ -156,78 +157,80 @@ main{
    padding-bottom: 15px;
 
  }
- 
+
  .prices {
-  text-align: center;
-  display: grid;
-  grid-template-columns: auto auto auto;
+   text-align: center;
+   display: grid;
+   grid-template-columns: auto auto auto;
  }
 
  .pricesDiv {
-  display: flex;
-  flex-direction: column; }
-/* *********************/
-/* seccion C O N T A C T O */
-/* *********************/
+   display: flex;
+   flex-direction: column;
+ }
 
-#Contactanos {
-  padding: 100px 15px;
-  background-color: #f3f3f3;
-}
+ /* *********************/
+ /* seccion C O N T A C T O */
+ /* *********************/
 
-#Contactanos .titulo-seccion {
-  margin-bottom: 20px;
-}
+ #Contactanos {
+   padding: 100px 15px;
+   background-color: #f3f3f3;
+ }
 
-#Contactanos .contenedor-form {
-  max-width: 1100px;
-  margin: auto;
-}
+ #Contactanos .titulo-seccion {
+   margin-bottom: 20px;
+ }
 
-#Contactanos .contenedor-form .fila {
-  margin-bottom: 15px;
-}
+ #Contactanos .contenedor-form {
+   max-width: 1100px;
+   margin: auto;
+ }
 
-#Contactanos .contenedor-form .mitad {
-  display: flex;
-  justify-content: space-between;
-}
+ #Contactanos .contenedor-form .fila {
+   margin-bottom: 15px;
+ }
 
-#Contactanos .contenedor-form input,
-#Contactanos .contenedor-form textarea {
-  padding: 20px;
-  border-radius: 20px;
-  border: none;
-  border: 1px solid #919191;
-}
+ #Contactanos .contenedor-form .mitad {
+   display: flex;
+   justify-content: space-between;
+ }
 
-#Contactanos .contenedor-form .mitad input {
-  width: 48%;
-}
+ #Contactanos .contenedor-form input,
+ #Contactanos .contenedor-form textarea {
+   padding: 20px;
+   border-radius: 20px;
+   border: none;
+   border: 1px solid #919191;
+ }
 
-#Contactanos .contenedor-form .input-full {
-  width: 100%;
-}
+ #Contactanos .contenedor-form .mitad input {
+   width: 48%;
+ }
 
-#Contactanos .titulo-seccion {
-  text-align: center;
-  font-size: 22px;
-  text-transform: uppercase;
-  color: #111135;
-  text-decoration: underline;
-  text-decoration-color: #d3d3d3;
-  text-decoration-thickness: 5px;
-}
+ #Contactanos .contenedor-form .input-full {
+   width: 100%;
+ }
 
-#Contactanos .btn-enviar {
-  display: block;
-  margin: auto;
-  cursor: pointer;
-  transition: .5s;
-  padding: 10px 15px !important;
-}
+ #Contactanos .titulo-seccion {
+   text-align: center;
+   font-size: 22px;
+   text-transform: uppercase;
+   color: #111135;
+   text-decoration: underline;
+   text-decoration-color: #d3d3d3;
+   text-decoration-thickness: 5px;
+ }
 
-#Contactanos .btn-enviar:hover {
-  background-color: green;
-  color: #fff;
-}
+ #Contactanos .btn-enviar {
+   display: block;
+   margin: auto;
+   cursor: pointer;
+   transition: .5s;
+   padding: 10px 15px !important;
+ }
+
+ #Contactanos .btn-enviar:hover {
+   background-color: green;
+   color: #fff;
+ }
