@@ -1,6 +1,7 @@
  /*---- navbar -----*/
  * {
    margin: 0;
+   
  }
 
  ul.navbar {
@@ -124,7 +125,10 @@
  }
 
  /*----- main sections ------*/
+main{
+  background-color: beige;
 
+}
  h1 {
    font-size: 35px;
    text-align: center;
@@ -138,7 +142,6 @@
    margin-bottom: 2%;
    padding-top: 1%;
    align-items: center;
-   background-color: beige;
 
  }
 
@@ -167,46 +170,46 @@
 /* seccion C O N T A C T O */
 /* *********************/
 
-#contacto {
+#Contactanos {
   padding: 100px 15px;
   background-color: #f3f3f3;
 }
 
-#contacto .titulo-seccion {
+#Contactanos .titulo-seccion {
   margin-bottom: 20px;
 }
 
-#contacto .contenedor-form {
+#Contactanos .contenedor-form {
   max-width: 1100px;
   margin: auto;
 }
 
-#contacto .contenedor-form .fila {
+#Contactanos .contenedor-form .fila {
   margin-bottom: 15px;
 }
 
-#contacto .contenedor-form .mitad {
+#Contactanos .contenedor-form .mitad {
   display: flex;
   justify-content: space-between;
 }
 
-#contacto .contenedor-form input,
-#contacto .contenedor-form textarea {
+#Contactanos .contenedor-form input,
+#Contactanos .contenedor-form textarea {
   padding: 20px;
   border-radius: 20px;
   border: none;
   border: 1px solid #919191;
 }
 
-#contacto .contenedor-form .mitad input {
+#Contactanos .contenedor-form .mitad input {
   width: 48%;
 }
 
-#contacto .contenedor-form .input-full {
+#Contactanos .contenedor-form .input-full {
   width: 100%;
 }
 
-#contacto .titulo-seccion {
+#Contactanos .titulo-seccion {
   text-align: center;
   font-size: 22px;
   text-transform: uppercase;
@@ -216,7 +219,7 @@
   text-decoration-thickness: 5px;
 }
 
-#contacto .btn-enviar {
+#Contactanos .btn-enviar {
   display: block;
   margin: auto;
   cursor: pointer;
@@ -224,7 +227,7 @@
   padding: 10px 15px !important;
 }
 
-#contacto .btn-enviar:hover {
+#Contactanos .btn-enviar:hover {
   background-color: green;
   color: #fff;
 }
