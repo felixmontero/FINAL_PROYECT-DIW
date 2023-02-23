@@ -22,8 +22,7 @@
  }
 
  ul.navbar li a {
-   font-family: 'Alatsi';
-   font-size: 22px;
+  font-family: 'GFS Didot', serif;   font-size: 22px;
    display: block;
    color: #ffffff;
    font-size: 140%;
@@ -32,7 +31,7 @@
  }
 
  ul.navbar li a:hover {
-   background-color: #000000;
+   background-color: #131212;
  }
 
  ul.navbar li.right {
@@ -57,7 +56,7 @@
  }
 
  .mySlides img {
-   height: 400px;
+   height: 500px;
    object-fit: cover;
  }
 
@@ -70,11 +69,12 @@
    width: auto;
    margin-top: -22px;
    padding: 16px;
-   background-color: transparent;
+   background-color: #272525;
    color: white;
    font-weight: bold;
    font-size: 18px;
    transition: 0.6s ease;
+   border: none;
    border-radius: 0 3px 3px 0;
    user-select: none;
  }
@@ -125,7 +125,7 @@
  }
 
  /*----- main sections ------*/
- main {
+ body {
    background-color: beige;
 
  }
@@ -134,7 +134,15 @@
    font-size: 35px;
    text-align: center;
    margin-bottom: 10px;
+   font-family: 'GFS Didot', serif;
+   margin-bottom: 20px;
+   color: #111135;
+ }
 
+ h2 {
+   font-size: 27px;
+   text-align: center;
+   margin: 5%;
  }
 
  .textBox {
@@ -143,86 +151,97 @@
    margin-bottom: 2%;
    padding-top: 1%;
    align-items: center;
+ }
 
+ p {
+   font-size: 18px;
+   padding-bottom: 20px;
+   font-family: 'Montserrat', sans-serif;
  }
 
  .textBox p {
    margin-left: 10%;
    margin-right: 10%;
    text-align: center;
-
- }
-
- p {
-   padding-bottom: 15px;
-
  }
 
  .prices {
    text-align: center;
-   display: grid;
-   grid-template-columns: auto auto auto;
+   justify-content: center;
+   display: flex;
+   flex-direction: row;
  }
 
  .pricesDiv {
    display: flex;
    flex-direction: column;
+   padding-top: 10px;
+   margin: 5px;
+   background-color: rgb(218, 219, 219);
+   border-radius: 5px;
+   border-style: solid;
+   border-color: darkslategrey;
  }
 
- /* *********************/
+ @media (max-width: 800px) {
+   .prices {
+     flex-direction: column;
+   }
+ }
+
+ .pricesDiv:hover {
+   background-color: rgb(181, 182, 182);
+
+ }
+
+ footer {
+   background-color: #272525;
+
+ }
+
+ footer p {
+   color: #ffffff;
+ }
+
+ footer p a {
+   color: #ffffff;
+ }
+
+ /* *********************** */
  /* seccion C O N T A C T O */
- /* *********************/
+ /* *********************** */
 
- #Contactanos {
-   padding: 100px 15px;
-   background-color: #f3f3f3;
- }
-
- #Contactanos .titulo-seccion {
-   margin-bottom: 20px;
- }
-
- #Contactanos .contenedor-form {
+ .contenedor-form {
    max-width: 1100px;
    margin: auto;
  }
 
- #Contactanos .contenedor-form .fila {
+ .contenedor-form .fila {
    margin-bottom: 15px;
  }
 
- #Contactanos .contenedor-form .mitad {
+ .contenedor-form .mitad {
    display: flex;
    justify-content: space-between;
  }
 
- #Contactanos .contenedor-form input,
- #Contactanos .contenedor-form textarea {
+ .contenedor-form input,
+ .contenedor-form textarea {
    padding: 20px;
    border-radius: 20px;
    border: none;
    border: 1px solid #919191;
  }
 
- #Contactanos .contenedor-form .mitad input {
+ .contenedor-form .mitad input {
    width: 48%;
  }
 
- #Contactanos .contenedor-form .input-full {
+ .contenedor-form .input-full {
    width: 100%;
  }
 
- #Contactanos .titulo-seccion {
-   text-align: center;
-   font-size: 22px;
-   text-transform: uppercase;
-   color: #111135;
-   text-decoration: underline;
-   text-decoration-color: #d3d3d3;
-   text-decoration-thickness: 5px;
- }
-
- #Contactanos .btn-enviar {
+ .btn-enviar {
    display: block;
    margin: auto;
    cursor: pointer;
@@ -230,7 +249,7 @@
    padding: 10px 15px !important;
  }
 
- #Contactanos .btn-enviar:hover {
+ .btn-enviar:hover {
    background-color: green;
    color: #fff;
  }
