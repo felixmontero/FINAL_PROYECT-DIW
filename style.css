@@ -22,7 +22,8 @@
  }
 
  ul.navbar li a {
-  font-family: 'GFS Didot', serif;   font-size: 22px;
+   font-family: Helvetica, Arial, sans-serif;
+   font-size: 22px;
    display: block;
    color: #ffffff;
    font-size: 140%;
@@ -134,7 +135,7 @@
    font-size: 35px;
    text-align: center;
    margin-bottom: 10px;
-   font-family: 'GFS Didot', serif;
+   font-family: Helvetica, Arial, sans-serif;
    margin-bottom: 20px;
    color: #111135;
  }
