@@ -178,6 +178,7 @@
  }
 
  footer {
+  padding-top: 7px;
    background-color: #272525;
 
  }
@@ -188,7 +189,14 @@
 
  footer p a {
    color: #ffffff;
+   font-size: 17px;
+   text-decoration: none;
+
  }
+
+ footer p a:hover{
+  font-size: 16px;
+}
 
  /* *********************** */
  /* seccion C O N T A C T O */
